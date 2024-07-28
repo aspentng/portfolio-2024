@@ -21,7 +21,7 @@ section {
 }
 
 .full-div {
-  @apply box-border h-screen px-8 py-12 md:px-20 md:pt-20 md:pb-10 lg:pb-20;
+  @apply box-border h-screen px-8 py-12 md:px-20 md:pt-20 md:pb-10 lg:pb-20 xl:px-0;
 }
 
 .divider {
