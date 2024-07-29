@@ -4,8 +4,7 @@
 
 body {
   font-family: DM Sans, sans-serif;
-  margin: 0;
-  background-color: #0d0d0d;
+  @apply bg-zinc-950;
 }
 
 p {
@@ -21,11 +20,9 @@ section {
 }
 
 .full-div {
-  @apply box-border h-screen px-8 py-12 md:px-20 md:pt-20 md:pb-10 lg:pb-20 xl:px-0;
+  @apply box-border h-screen px-8 pt-12 pb-16 md:px-20 md:pt-20 md:pb-10 lg:pb-20 xl:px-0;
 }
 
 .divider {
-  width: 40px;
-  height: 1px;
-  background-color: white;
+  @apply w-10 h-px bg-white;
 }
