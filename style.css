@@ -20,7 +20,7 @@ section {
 }
 
 .full-div {
-  @apply box-border h-screen px-8 pt-12 pb-16 md:px-20 md:pt-20 md:pb-10 lg:pb-20 xl:px-0;
+  @apply box-border h-screen px-8 pt-12 pb-16 md:px-20 md:py-24 lg:pb-20 xl:px-0 xl:py-32;
 }
 
 .divider {
