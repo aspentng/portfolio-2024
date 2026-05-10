@@ -2,31 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: DM Sans, sans-serif;
-  @apply bg-zinc-950;
+@layer base {
+  body {
+    font-family: "DM Sans", sans-serif;
+    @apply bg-zinc-950;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  p {
+    @apply text-lg;
+  }
+
+  a:hover {
+    @apply cursor-pointer underline underline-offset-4;
+  }
 }
 
-h1 {
-  @apply text-4xl !important;
-}
+@layer components {
+  section {
+    @apply mx-auto full-div grid lg:grid-cols-12 max-w-screen-xl;
+  }
 
-p {
-  @apply text-lg;
-}
+  .full-div {
+    @apply box-border h-screen px-8 pt-12 pb-16 md:px-20 md:py-24 lg:pb-20 xl:px-0 xl:py-32;
+  }
 
-a:hover {
-  @apply cursor-pointer underline underline-offset-4;
-}
-
-section {
-  @apply mx-auto full-div grid lg:grid-cols-12 max-w-screen-xl;
-}
-
-.full-div {
-  @apply box-border h-screen px-8 pt-12 pb-16 md:px-20 md:py-24 lg:pb-20 xl:px-0 xl:py-32;
-}
-
-.divider {
-  @apply w-10 h-px bg-white;
+  .divider {
+    @apply w-10 h-px bg-white;
+  }
 }
