@@ -16,8 +16,12 @@
     @apply text-lg;
   }
 
+  a {
+    underline underline-offset-4;
+  }
+
   a:hover {
-    @apply cursor-pointer underline underline-offset-4;
+    @apply cursor-pointer @apply text-zinc-950 bg-green-400;
   }
 }
 
