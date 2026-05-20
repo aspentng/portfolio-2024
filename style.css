@@ -21,7 +21,7 @@
   }
 
   a:hover {
-    @apply cursor-pointer @apply text-zinc-950 bg-green-400;
+    @apply cursor-pointer text-zinc-950 bg-green-400;
   }
 }
 
